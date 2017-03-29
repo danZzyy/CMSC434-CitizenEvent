@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Theme Template for Bootstrap</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+    <!-- Navbar stylesheet -->
+    <link rel="stylesheet" href="K:\My Stuff\Programs\GitHub\CMSC434-CitizenEvent\navbar.css">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"> 
+    </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    
+     <div class="container" role="main">
+      <!--Practice-->
+        <div>
+          <!-- static navbar -->
+          <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+              <div class="navbar-header">
+                <!--pools icon-->
+                <a class="navbar-brand" href="#">
+                    <img alt="Pools" src="http://www.clker.com/cliparts/z/r/t/i/M/s/drop-white-hi.png" height="30" width="30">
+                </a>
+              </div>
+              <!--faux sign in-->
+              <p class="navbar-text navbar-right">Signed in as Kyle DeLancey</p>
+              <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Pages <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Nav header</li>
+                      <li><a href="#">Separated link</a></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div>
+            </nav>
+        </div>
+      
+        <div id="carousel" class="carousel padding-2">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li class="create1 active"></li>
+              <li class="create2"></li>
+            </ol>
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-sm-12">a</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">b</div>
+                        <div class="col-sm-4">c</div>
+                        <div class="col-sm-2">d</div>
+                        <div class="col-sm-2">
+                            <button id="create1" type="button" class="btn btn-sm btn-success">Success</button>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-12">a</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">b</div>
+                        <div class="col-sm-4">c</div>
+                        <div class="col-sm-2">d</div>
+                        <div class="col-sm-2">
+                            <button id="create2" type="button" class="btn btn-sm btn-primary">Success</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+    </div>
+  
+    <script src="./app/index.js"></script>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
