@@ -24,11 +24,42 @@ header {
   text-align: center;
 }
 #search {
-  padding: 10px;
-  height: 45px;
+  position: relative;
+  bottom: 6px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 5px;
   width: 150px;
   background-color: gray;
 }
 #myacct {
-  margin-left: 20%;
+  position: fixed;
+  right: 0;
+  padding: 20px;
+}
+#title {
+  text-align:  center;
+  font-size: 22pt;
+}
+#personal-info {
+  height: 800px;
+  float: left;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+#my-info {
+  width: 300px;
+}
+#userhead {
+  float: left;
+  position: relative;
+  font-size: 40px;
+  color: black;
+  padding-left: 10px;
+}
+.floatbox {
+  width: 300px;
+  float: left;
+  position: relative;
+  border: 1px solid black;
 }
