@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/landing.css">
+    <title>My Account</title>
+  </head>
+  <body>
+    <header id="top" class="header">
+      <section  class="text-vertical-center" id="landing">
+        <h1 id="logo">
+          P<span class="icons"><span class="glyphicon glyphicon-tint"></span><span class="glyphicon glyphicon-tint"></span></span>LS
+        </h1>
+        <hr class="intro-divider">
+        <ul class="list-inline intro-social-buttons">
+            <li>
+              <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#signUpModal">
+                Sign up
+              </button>
+            </li>
+            <li>
+              <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#loginModal">
+                Login
+              </button>
+          </li>
+        </ul>
+        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="email-name" class="form-control-label sr-only">Email:</label>
+                    <input type="text" class="form-control" id="email-name" placeholder="Email" required></input>
+                  </div>
+                  <div class="form-group">
+                    <label for="password-text" class="form-control-label sr-only">Password:</label>
+                    <input type="password" class="form-control" id="password-text" placeholder="Password" required></input>
+                  </div>
+                  <div class="form-group">
+                    <label for="re-pass-text" class="form-control-label sr-only">Re-enter Password</label>
+                    <input type="password" class="form-control" id="re-pass-text" placeholder="Re-enter Password:" required></input>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="log-email-name" class="form-control-label sr-only">Email:</label>
+                    <input type="text" class="form-control" id="log-email-name" placeholder="Email" required></input>
+                  </div>
+                  <div class="form-group">
+                    <label for="log-password-text" class="form-control-label sr-only">Password</label>
+                    <input type="password" class="form-control" id="log-password-text" placeholder="Password" required></input>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <div id="more-info">
+      <span>
+        Find out more about Pools
+      </span>
+        <a href="#about">
+          <span>&nbsp<span class="glyphicon glyphicon-chevron-down"> </span>
+        </a>
+    </div>
+    <div id="about" name="about">
+      <div id="top">
+        <p> What is Pools? </p>
+      </div>
+      <div id="bottom">
+        <p> It's super cool </p>
+      </div>
+    </div>
+  </body>
+</html>
