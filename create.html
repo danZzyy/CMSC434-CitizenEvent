@@ -40,12 +40,56 @@
       <!--Practice-->
       
         <!-- Static Navbar -->
+        <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+          <div class="container" >
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a id="logo" class="navbar-brand" href="#"> P<span class="icons"><span class="glyphicon glyphicon-tint"></span><span class="glyphicon glyphicon-tint"></span></span>LS</a>
+            </div>
+            <div id="navbarinner" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">My Archives</a></li>
+                <li><a><button class="add btn btn-default"><span class="glyphicon glyphicon-plus"/></button></a></li>
+              </ul>
+              <!--Search Bar-->
+              <div class="col-sm-3 col-md-3 pull-left">
+                <form class="navbar-form" role="search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" id="srch-term">
+                    <div class="input-group-btn">
+                      <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Isabella Seeman <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">My Account</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        
         <div class="row">
             <nav class="navbar navbar-default navbar-static-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <!--pools icon-->
-                        <a class="navbar-brand" href="#">
+                        <a id="#navbar" class="navbar-brand" href="#">
                             p<span style="font-size:0.75em;" class="glyphicon glyphicon-tint"></span><span <span style="font-size:0.75em;" class="glyphicon glyphicon-tint"></span>ls
                         </a>
                     </div>
@@ -81,24 +125,27 @@
         
         <!-- Carousel -->
         <div class="row">
-          <div id="creationCarousel" class="carousel" data-interval="false" data-ride="false">
+          <div id="creationCarousel" class="carousel slide carousel-fade" data-interval="false" data-ride="false">
               <!-- Indicators -->
               <ol class="carousel-indicators">
                   <li data-target="#creationCarousel" data-slide-to="0" class="active"></li>
                   <li data-target="#creationCarousel" data-slide-to="1" class=""></li>
+                  <li data-target="#creationCarousel" data-slide-to="2" class=""></li>
               </ol>
               <div class="carousel-inner">
+                <div class="car-header">
+                      <div id="headerCarousel" class="title"> Create an event. </div>
+                    </div>
                   <div class="item active">
-                      <div class="container">
-                        
+                      <div id="innerCarousel" class="container">
                           <div class="row">
-                              <div class="col-6 col-md-6">
+                              <div class="col-6 col-lg-6">
                                 <div class="form-group">
                                   <label>Event Name:</label>
-                                  <input type="text" class="form-control">
+                                  <input type="text" class="form-control" placeholder="Name of the event">
                                 </div>
                               </div>
-                              <div class="col-6 col-md-2">
+                              <div class="col-6 col-lg-4">
                                 <div class="form-group">
                                   <label>Type:</label>
                                   <select class="form-control">
@@ -112,47 +159,56 @@
                           </div>
                           
                           <div class="row">
-                              <div class="col-6 col-md-2">
+                              <div class="col-6 col-md-4">
                                 <div class="form-group">
                                   <label>Date:</label>
                                   <input type="date" class="form-control">
                                 </div>
                               </div>
-                              <div class="col-6 col-md-4">
+                              <div class="col-6 col-md-6">
                                 <div class="form-group">
                                   <label>Location:</label>
-                                  <input type="text" class="form-control">
+                                  <input type="text" class="form-control" placeholder="City, Street, Planet, etc">
                                 </div>
                               </div>
                           </div>
                           
-                          <div class="row">
+                          <div class="row" style="padding-right:1em">
                             <div class="col pull-right">
-                              <p><a id="nextButton" class="btn btn-sm btn-primary" href="#" role="button">Next</a></p>
+                              <p><a id="nextButton" class="btn btn-md btn-primary" href="#" role="button">Next</a></p>
                             </div>
                           </div>
                       </div>
                   </div>
                   <div class="item">
-                    <div class="container">
+                     <div id="innerCarousel" class="container">
                           <div class="row">
-                              <div class="col">
+                              <div class="col-6 col-lg-6">
                                 <div class="form-group">
-                                  <label>Event Name:</label>
-                                  <input type="text" class="form-control">
+                                  <label for="comment">Description:</label>
+                                  <textarea class="form-control" rows="5" placeholder="Add a description of the event here."></textarea>
+                                </div>
+                              </div>
+                              <div class="col-6 col-lg-4">
+                                <div class="form-group">
+                                  <label>Who can view:</label>
+                                  <select class="form-control">
+                                    <option>Private (only you)</option>
+                                    <option>Public (everyone)</option>
+                                  </select>
                                 </div>
                                 <div class="form-group">
-                                  <label>Short Event Description:</label>
-                                  <input type="password" class="form-control">
+                                  <label>Organization name:</label>
+                                  <input type="text" class="form-control" placeholder="Your organization">
                                 </div>
                               </div>
                           </div>
                           
                           <div class="row">
-                            <div class="col">
+                            <div class="col pull-left ">
                               <p><a id="previousButton" class="btn btn-sm btn-primary" href="#" role="button">Prev</a></p>
                             </div>
-                            <div class="col align-self-end">
+                            <div class="col pull-right">
                               <p><a id="finishButton" class="btn btn-sm btn-success" href="#" role="button">Finish</a></p>
                             </div>
                           </div>
