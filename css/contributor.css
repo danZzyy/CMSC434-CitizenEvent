@@ -1,0 +1,16 @@
+.login-form {
+  margin: 5em;
+  display: block;
+}
+
+.login-buttons {
+  margin: 5em;
+}
+
+.input-field {
+  margin: 1em;
+}
+
+.register-button {
+  margin-left: 2em;
+}
