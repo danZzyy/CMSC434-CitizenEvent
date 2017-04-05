@@ -14,3 +14,17 @@
 .register-button {
   margin-left: 3.53em;
 }
+
+.project-select {
+  margin: 2em;
+  width: inherit;
+  border-style: outset;
+  text-align: center;
+}
+
+.header-info {
+  text-align: center;
+  border-style: solid;
+  border-color: darkblue;
+  background-color: lightblue;
+}
