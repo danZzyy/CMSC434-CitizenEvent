@@ -8,25 +8,25 @@
 
 #nextButton {
     font-size: 2em;
-    background-color: #FF7400;
+    background-color:  #FF9844;
     border-color: #FF7400;
 }
 
 #nextButton:hover {
     font-size: 2em;
-    background-color: #FF9900;
+    background-color: #FF7B0D;
     border-color: #FF7400;
 }
 
 #previousButton {
     font-size: 2em;
-    background-color: #FF7400;
+    background-color: #FF9844;
     border-color: #FF7400;
 }
 
 #previousButton:hover {
     font-size: 2em;
-    background-color: #FF9900;
+    background-color: #FF7B0D;
     border-color: #FF7400;
 }
 
@@ -38,20 +38,8 @@
 
 #finishButton:hover {
     font-size: 2em;
-    background-color: #00BF9F;
+    background-color: #007C7C;
     border-color: #00BF9F;
-}
-
-#backButton {
-    font-size: 2em;
-    background-color: #FF7400;
-    border-color: #FF7400;
-}
-
-#backButton:hover {
-    font-size: 2em;
-    background-color: #FF9900;
-    border-color: #FF7400;
 }
 
 #logo{
@@ -288,7 +276,7 @@ button.add:hover{
 .navbar-nav>li>.dropdown-menu {
     margin-top: -10px;
   }
-  
+
 .form-group {
     font-size: 2em;
 }
