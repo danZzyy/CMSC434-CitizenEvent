@@ -1,0 +1,152 @@
+#logo{
+  color: white;
+  opacity: .9;
+}
+
+.btn {
+    width: 100px;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 6em;
+    font-weight: 700;
+}
+
+.icons{
+  font-size: .75em;
+}
+
+div.modal-dialog {
+    margin: auto;
+    width: 450px;
+    height: 45%;
+    margin-top: 200px;
+}
+
+div#top p {
+    font-size: xx-large;
+    font-weight: bold;
+    width: 550px;
+    margin: auto;
+    padding-top: 35px;
+}
+
+div#bottom p {
+    width: 500px;
+    position: relative;
+    top: -190px;
+    margin: auto;
+}
+
+div#about{
+  height:100%;
+  width: 100%;
+}
+
+div#about div#top{
+  height: 40%;
+  background: linear-gradient(#FF7400, whitesmoke);
+}
+
+div#about div#bottom{
+  height: 60%;
+  background: whitesmoke;
+}
+
+div#more-info{
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  background-color: #FF7400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div#more-info span{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-size: large;
+}
+
+div#more-info a{
+  text-decoration: none;
+  color: white;
+  line-height: normal;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div#more-info a span:hover{
+  color: #009F9F;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 90%;
+    background: url(../img/bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+section#landing{
+  background-image: url("PoolPhoto.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
