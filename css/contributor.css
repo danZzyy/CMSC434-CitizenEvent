@@ -1,5 +1,5 @@
 .login-form {
-  margin: 5em;
+  margin: 3em;
   display: block;
 }
 
@@ -9,6 +9,10 @@
 
 .input-field {
   margin: 1em;
+  height: 115%;
+  width: 70%
+  font-size: 5em;
+
 }
 
 .register-button {
@@ -16,15 +20,22 @@
 }
 
 .project-select {
-  margin: 2em;
-  width: inherit;
-  border-style: outset;
-  text-align: center;
+  margin: 0.70em;
+  width: 92%;
 }
 
 .header-info {
   text-align: center;
   border-style: solid;
-  border-color: darkblue;
-  background-color: lightblue;
+  background-color: #FF7400;
+  border-color: #FF7400;
+  color: white;
+}
+
+.login-input{
+  margin-left: 16em;
+}
+
+#myacct {
+  margin-left: 10%;
 }
