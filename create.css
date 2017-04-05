@@ -42,6 +42,18 @@
     border-color: #00BF9F;
 }
 
+#backButton {
+    font-size: 2em;
+    background-color: #FF7400;
+    border-color: #FF7400;
+}
+
+#backButton:hover {
+    font-size: 2em;
+    background-color: #FF9900;
+    border-color: #FF7400;
+}
+
 #logo{
   color: white;
 }
@@ -52,6 +64,10 @@
 
 #navbarinner li a{
   color: white;
+}
+
+#creationCarousel {
+    border-radius: 7px;
 }
 
 #innerCarousel {
@@ -68,9 +84,68 @@
     padding-left: 1em;
 }
 
+#contributor {
+    text-align: center;
+    padding-top: 10em;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#contributorPanel {
+    border: 2px solid gray;
+    box-shadow: -2px 2px 5px grey;
+}
+
+#contributorHeading {
+    background-color: #009F9F;
+    font-size: medium;
+    color: white;
+}
+
+#contributorIcon a{
+    padding-left: .25em;
+    padding-right: .25em;
+    font-size: 5em;
+    color: #FF7400;
+}
+
+#contributorIcon:hover a{
+    color: #FF9800;
+}
+
+#contributorAdd a{
+    padding-left: .25em;
+    padding-right: .25em;
+    font-size: 4em;
+    color: #002222;
+}
+
+#contributorAdd:hover a{
+    color: #113333;
+}
+
+#contributorModal {
+    position: absolute;
+    top: 25%;
+}
+
+#modalHeader {
+    background: #113333;
+    color: white;
+}
+
+#finishHeader {
+    padding: 1.5em .475em;
+}
+
+#backButtonDiv {
+    position:relative;
+    left: 85%;
+}
+
 .carousel{
   width: 80%;
-  height: 25em;
+  height: 100%;
   border: 2px solid gray;
   box-shadow: -2px 2px 5px grey;
   margin: 0 auto;
@@ -87,8 +162,9 @@ div.car-header{
   height: 15%;
   color: black;
   font-size: 2.75em;
-  padding: 10px 30px;
+  padding: .25em .75em;
   background-color: #FF7400;
+  border-radius: 5px;
   color: white;
 }
 
