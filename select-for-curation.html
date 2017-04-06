@@ -1,0 +1,193 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" href="css/curationp1.css">
+    <script src="js/curateSelect.js"></script>
+    <script>
+    // Load this when the DOM is ready
+    $(document).ready(function() {
+        $('#carousel').carousel({
+        //options here
+        });
+    });
+    </script>
+  </head>
+  <body ng-app="">
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #009F9F;">
+      <div class="container" >
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="logo" class="navbar-brand" href="./landing.html#about"> P<span class="icons"><span class="glyphicon glyphicon-tint"></span><span class="glyphicon glyphicon-tint"></span></span>LS</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./myarchive.html">My Archives</a></li>
+            <li><a href="./create.html"><button class="add btn btn-default"><span class="glyphicon glyphicon-plus"/></button></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Isabella Seeman <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="./account.html">My Account</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div>
+      <div id="carousel" class="carousel slide" data-ride="carousel" data-wrap="false" data-interval="false">
+          <!-- Menu -->
+          <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+              <li data-target="#carousel" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Items -->
+          <div class="carousel-inner">
+              <div class="item active">
+                  <div class="car-header">
+                    <div class="title"> Photos </div>
+                  </div>
+                  <div class="car-container">
+                    <div class="center">
+                        <div class="data-container" ng-repeat="i in [1, 2, 3, 4, 5, 6, 7, 8]">
+                          <div class="check-comp">
+                            <label class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input">
+                              <span class="custom-control-indicator"></span>
+                            </label>
+                            <img class="secondary" src="img/dog{{i}}.jpg" alt="">
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <a href="#carousel" id="nextButton" class="right carousel-control" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span> Videos
+                  </a>
+              </div>
+              <div class="item">
+                <div class="car-header">
+                  <div class="title"> Videos </div>
+                </div>
+                <div class="car-container">
+                  <div class="center">
+                    <div class="data-container" ng-repeat="i in [1, 2, 3]">
+                      <div class="check-comp">
+                        <label class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input">
+                          <span class="custom-control-indicator"></span>
+                        </label>
+                        <img class="secondary" src="img/dogvideo{{i}}.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a id="previousButton" href="#carousel" class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span> Photos
+                </a>
+                <a role="button" id="nextButton" href="#carousel" class="right carousel-control" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span> Social Media
+                </a>
+              </div>
+              <div class="item">
+                <div class="car-header">
+                  <div class="title"> Social Media </div>
+                </div>
+                <div class="car-container">
+                  <div class="center">
+                    <div class="socMed-container">
+                      <div class="socMed-title">
+                        <label>
+                          <span> Facebook </span>
+                          <input type="checkbox">
+                        </label>
+                      </div>
+                      <div class="posts">
+                        <div class="data-container" ng-repeat="i in [1, 2, 3]">
+                          <div class="check-comp">
+                            <label class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input">
+                              <span class="custom-control-indicator"></span>
+                            </label>
+                            <img class="secondary" src="img/dogfacebook{{i}}.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="socMed-container">
+                      <div class="socMed-title">
+                        <label>
+                          <span> Twitter </span>
+                          <input type="checkbox">
+                        </label>
+                      </div>
+                      <div class="posts">
+                        <div class="data-container" ng-repeat="i in [1, 2, 3, 4]">
+                          <div class="check-comp">
+                            <label class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input">
+                              <span class="custom-control-indicator"></span>
+                            </label>
+                            <img class="secondary" src="img/dogtwitter{{i}}.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="socMed-container">
+                      <div class="socMed-title">
+                        <label>
+                          <span> Instagram </span>
+                          <input type="checkbox">
+                        </label>
+                      </div>
+                      <div class="photos">
+                        <div class="data-container" ng-repeat="i in [1, 2]">
+                          <div class="check-comp">
+                            <label class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input">
+                              <span class="custom-control-indicator"></span>
+                            </label>
+                            <img class="secondary" src="img/doginsta{{i}}.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a id="previousButton" href="#carousel" class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span> Videos
+                </a>
+                <a role="button" id="nextButton" href="#carousel" class="right carousel-control" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span> Summary Information
+                </a>
+              </div>
+                <a id="previousButton" href="#carousel" class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span> Social Media
+                </a>
+                <a role="button" id="finishButton" href="#carousel" class="right carousel-control" data-slide="next">
+                    Finish
+                </a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -42,6 +42,10 @@ header {
   margin: 1.5em;
 }
 
+#login{
+  background-color: #009F9F;
+}
+
 .input-field {
   margin: 1em;
   font-size: 1.5em;
@@ -164,4 +168,11 @@ header {
     opacity: 0;
     display: none;
   }
+
+.dropdown:visited{
+  color: black;
+}
+
+.dropdown{
+  color: black;
 }

@@ -1,0 +1,20 @@
+#title {
+  margin-top: 70px;
+  text-align: center;
+}
+.panel {
+  margin-top: 10px;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+#user-icon {
+  font-size: 90pt;
+}
+#options {
+  text-align: center;
+  font-size: 14pt;
+}
+.opt {
+  margin-left: 40px;
+  margin-right: 40px;
+}

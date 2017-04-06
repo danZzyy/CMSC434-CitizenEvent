@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/contrib_account.css"/>
   <link rel="stylesheet" href="css/contributor.css" />
-  <title>Link Social Media</title>
+  <title>Connect Social Media</title>
 </head>
 <body>
   <header>
@@ -17,22 +18,28 @@
     </span>
     <span id="myacct" onclick="in_progress('Account')"><span class="glyphicon glyphicon-user" ></span></span>
     <span class="dropdown"><span class="glyphicon glyphicon glyphicon-envelope dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
-    <ul class="dropdown-menu dropdown-menu-right dropdown-text" aria-labelledby="dropdownMenu1">
-      <li>Make sure to get several angles of all the dogs who are good</li>
-    </ul>
-  </span>
+      <ul class="dropdown-menu dropdown-menu-right dropdown-text" aria-labelledby="dropdownMenu1">
+        <li>Make sure to get several angles of all the dogs who are good</li>
+      </ul>
+    </span>
   </header>
 
   <div id="main_content">
-    <a href="contributor-social-link.html" class="btn btn-default btn-lg btn-block project-select">
-      Upload From Twitter <img class="social-media-icon" src="img/twitter-icon.png" />
+    <a href="contributor-social-link.html" id="twitter" class="btn btn-default btn-lg btn-block project-select">
+      <span id="twitter-text"> Connect to Twitter </span> <img class="social-media-icon" src="img/twitter-icon.png" />
     </a>
-    <a href="contributor-social-link.html" class="btn btn-default btn-lg btn-block project-select">
-      Upload From Facebook <img class="social-media-icon" src="img/fb-icon.png" />
+    <a href="contributor-social-link.html" id="facebook"  class="btn btn-default btn-lg btn-block project-select">
+      <span id="fb-text"> Connect To Facebook </span> <img class="social-media-icon" src="img/fb-icon.png" />
     </a>
-    <a href="contributor-social-link.html" class="btn btn-default btn-lg btn-block project-select">
-      Upload From Tumblr <img class="social-media-icon" src="img/tumblr-icon.png" />
+    <a href="contributor-social-link.html" id="tumblr" href="" class="btn btn-default btn-lg btn-block project-select">
+      <span id="tumblr-text"> Connect To Tumblr </span> <img class="social-media-icon" src="img/tumblr-icon.png" />
     </a>
+    <a href="contributor-social-link.html" id="insta" href="" class="btn btn-default btn-lg btn-block project-select">
+      <span id="insta-text"> Connect To Instagram </span> <img class="social-media-icon" src="img/insta-icon.png" />
+    </a>
+    <button id="pushToproject" disabled class="btn btn-default btn-lg btn-block project-select">
+      Push Posts to Archive
+    </button>
   </div>
   <script src="js/contributor_functions.js"></script>
 </body>
