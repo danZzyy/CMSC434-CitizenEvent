@@ -1,18 +1,16 @@
 .login-form {
-  margin: 3em;
+  margin: 2em;
   display: block;
 }
 
 .login-buttons {
-  margin: 5em;
+  margin: 1.5em;
 }
 
 .input-field {
   margin: 1em;
-  height: 115%;
-  width: 70%
-  font-size: 5em;
-
+  font-size: 1.5em;
+  width: 95%;
 }
 
 .register-button {
@@ -33,7 +31,7 @@
 }
 
 .login-input{
-  margin-left: 16em;
+  margin-right: 4em;
 }
 
 #myacct {
