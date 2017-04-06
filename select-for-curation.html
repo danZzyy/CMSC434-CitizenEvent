@@ -7,8 +7,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/curationp1.css">
-    <link rel="stylesheet" href="css/navbar.css">
     <script src="javascript/curateSelect.js"></script>
     <script>
     // Load this when the DOM is ready
@@ -18,48 +18,49 @@
         });
     });
     </script>
+    <title>Curation Selection</title>
   </head>
   <body ng-app="">
     <!-- Static Navbar -->
-        <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
-          <div class="container" >
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a id="logo" class="navbar-brand" href="./landing.html#about"> P<span class="icons"><span class="glyphicon glyphicon-tint"></span><span class="glyphicon glyphicon-tint"></span></span>LS</a>
-            </div>
-            <div id="navbarinner" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="./myarchive.html">My Archives</a></li>
-                <li><a href="./create.html"><button class="add btn btn-default"><span class="glyphicon glyphicon-plus"/></button></a></li>
-              </ul>
-              <!--Search Bar-->
-              <div class="col-sm-3 col-md-3 pull-left">
-                <form class="navbar-form" role="search">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search" id="srch-term">
-                    <div class="input-group-btn">
-                      <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                    </div>
-                  </div>
-                </form>
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+      <div class="container" >
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="logo" class="navbar-brand" href="./landing.html#about"> P<span class="icons"><span class="glyphicon glyphicon-tint"></span><span class="glyphicon glyphicon-tint"></span></span>LS</a>
+        </div>
+        <div id="navbarinner" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./myarchive.html">My Archives</a></li>
+            <li><a href="./create.html"><button class="add btn btn-default"><span class="glyphicon glyphicon-plus"/></button></a></li>
+          </ul>
+          <!--Search Bar-->
+          <div class="col-sm-3 col-md-3 pull-left">
+            <form class="navbar-form" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" id="srch-term">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
               </div>
-              <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jim Bob <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="./account.html">My Account</a></li>
-                    <li><a href="./landing.html">Sign Out</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+            </form>
           </div>
-        </nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jim Bob <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="./account.html">My Account</a></li>
+                <li><a href="./landing.html">Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div>
       <div id="carousel" class="carousel slide" data-ride="carousel" data-wrap="false" data-interval="false">
           <!-- Menu -->
@@ -78,19 +79,22 @@
                   </div>
                   <div class="car-container">
                     <div class="center">
-                        <div class="data-container" ng-repeat="i in [1, 2, 3, 4, 5, 6, 7, 8]">
-                          <div class="check-comp">
-                            <label class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input">
-                              <span class="custom-control-indicator"></span>
-                            </label>
-                            <img class="secondary" src="img/dog{{i}}.jpg" alt="">
-                          </div>
+                      <div class="data-container" ng-repeat="i in [1, 2, 3, 4, 5, 6, 7, 8]">
+                        <div class="check-comp">
+                          <label class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input">
+                            <span class="custom-control-indicator"></span>
+                          </label>
+                          <img class="secondary" src="img/dog{{i}}.jpg" alt="">
                         </div>
+                      </div>
                     </div>
                   </div>
                   <a href="#carousel" id="nextButton" class="right carousel-control" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right"></span> Videos
+                      <div style="float:left;position:absolute">
+                        <span style="display:inline;font-size: 25px;position: relative;top: 23px;left: 27px;"> Videos </span>
+                        <span class="glyphicon glyphicon-chevron-right" style="position: relative;display:inline;right: -16px;top: 29px;"></span>
+                      </div>
                   </a>
               </div>
               <div class="item">
@@ -100,21 +104,27 @@
                 <div class="car-container">
                   <div class="center">
                     <div class="data-container" ng-repeat="i in [1, 2, 3]">
-                      <div class="check-comp">
-                        <label class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <span class="custom-control-indicator"></span>
-                        </label>
-                        <img class="secondary" src="img/dogvideo{{i}}.jpg" alt="">
-                      </div>
-                    </div>
+                       <div class="check-comp">
+                         <label class="custom-control custom-checkbox">
+                           <input type="checkbox" class="custom-control-input">
+                           <span class="custom-control-indicator"></span>
+                         </label>
+                         <img class="secondary" src="img/dogvideo{{i}}.jpg" alt="">
+                       </div>
+                     </div>
                   </div>
                 </div>
                 <a id="previousButton" href="#carousel" class="left carousel-control" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span> Photos
+                  <div style="float:left;position:absolute">
+                    <span class="glyphicon glyphicon-chevron-left" style="position: relative;display:inline; left: 15px;top: 33px;"></span>
+                    <span style="display:inline;font-size: 25px;position: relative;top: 26px; right: -9px;"> Photos </span>
+                  </div>
                 </a>
                 <a role="button" id="nextButton" href="#carousel" class="right carousel-control" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span> Social Media
+                  <div style="float:left;position:absolute;">
+                    <span style="display:inline;font-size: 25px;position: relative;top: 20px; left: 3px;"> Social Media </span>
+                    <span class="glyphicon glyphicon-chevron-right" style="position: relative;display:inline;right: -5px;top: 26px;"></span>
+                  </div>
                 </a>
               </div>
               <div class="item">
@@ -158,6 +168,9 @@
                             </label>
                             <img class="secondary" src="img/dogtwitter{{i}}.jpg" alt="">
                           </div>
+                          <div class="post">
+                            #goodboysearch
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -168,7 +181,7 @@
                           <input type="checkbox">
                         </label>
                       </div>
-                      <div class="photos">
+                      <div class="posts">
                         <div class="data-container" ng-repeat="i in [1, 2]">
                           <div class="check-comp">
                             <label class="custom-control custom-checkbox">
@@ -183,17 +196,15 @@
                   </div>
                 </div>
                 <a id="previousButton" href="#carousel" class="left carousel-control" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span> Videos
+                  <div style="float:left;">
+                    <span class="glyphicon glyphicon-chevron-left" style="position: absolute;display:inline; left: 15px;top: 38px;"></span>
+                    <span style="display:inline;font-size: 25px;position: absolute;top: 26px; right: 32px;"> Videos </span>
+                  </div>
                 </a>
-                <a role="button" id="nextButton" href="#carousel" class="right carousel-control" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span> Summary Information
-                </a>
-              </div>
-                <a id="previousButton" href="#carousel" class="left carousel-control" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span> Social Media
-                </a>
-                <a role="button" id="finishButton" href="#carousel" class="right carousel-control" data-slide="next">
-                    Finish
+                <a role="button" id="finishButton" href="./curate.html" class="right carousel-control" data-slide="next">
+                    <div style="position:absolute">
+                      <span style="position:relative">Curate</span>
+                    </div>
                 </a>
               </div>
           </div>

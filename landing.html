@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/landing.css">
-    <title>My Account</title>
+    <title>Pools</title>
   </head>
   <body>
     <header id="top" class="header">
@@ -35,16 +35,20 @@
               <div class="modal-body">
                 <form>
                   <div class="form-group">
-                    <label for="email-name" class="form-control-label sr-only">Email:</label>
+                    <label for="name" class="form-control-label sr-only"></label>
+                    <input type="text" class="form-control" id="name" placeholder="Name" required></input>
+                  </div>
+                  <div class="form-group">
+                    <label for="email-name" class="form-control-label sr-only"></label>
                     <input type="text" class="form-control" id="email-name" placeholder="Email" required></input>
                   </div>
                   <div class="form-group">
-                    <label for="password-text" class="form-control-label sr-only">Password:</label>
+                    <label for="password-text" class="form-control-label sr-only"></label>
                     <input type="password" class="form-control" id="password-text" placeholder="Password" required></input>
                   </div>
                   <div class="form-group">
-                    <label for="re-pass-text" class="form-control-label sr-only">Re-enter Password</label>
-                    <input type="password" class="form-control" id="re-pass-text" placeholder="Re-enter Password:" required></input>
+                    <label for="re-pass-text" class="form-control-label sr-only"></label>
+                    <input type="password" class="form-control" id="re-pass-text" placeholder="Re-enter Password" required></input>
                   </div>
                 </form>
               </div>
@@ -61,18 +65,18 @@
               <div class="modal-body">
                 <form>
                   <div class="form-group">
-                    <label for="log-email-name" class="form-control-label sr-only">Email:</label>
+                    <label for="log-email-name" class="form-control-label sr-only"></label>
                     <input type="text" class="form-control" id="log-email-name" placeholder="Email" required></input>
                   </div>
                   <div class="form-group">
-                    <label for="log-password-text" class="form-control-label sr-only">Password</label>
+                    <label for="log-password-text" class="form-control-label sr-only"></label>
                     <input type="password" class="form-control" id="log-password-text" placeholder="Password" required></input>
                   </div>
                 </form>
               </div>
               <div class="modal-footer">
                 <a class="btn btn-secondary" data-dismiss="modal">Close</a>
-                <a class="btn btn-primary" href="./account.html">Login</a>
+                <a class="btn btn-primary" href="./myarchive.html">Login</a>
               </div>
             </div>
           </div>
