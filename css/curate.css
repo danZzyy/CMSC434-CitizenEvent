@@ -2,12 +2,15 @@
 
 #templateDiv {
     width: 100%;
+    height: 100%;
     padding-bottom: 2em;
     margin: 0 auto;
 }
 
 #templateViewport {
     width: 100%;
+    height: 100%;
+    scrolling: no;
     border: none;
     margin: 0 auto;
 }
