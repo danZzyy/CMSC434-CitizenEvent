@@ -1,62 +1,32 @@
+.navbar-text {
+    padding-right: 5em;
+}
 
 .icons{
   font-size: .75em;
 }
 
-#logo{
-  color: white;
-}
-
-#navbar li a{
-  color: white;
-}
-
-.secondary {
-  width: 100%;
-  height: 100%;
-}
-
-.socMed-container {
-    height: 180px;
-    width: 515px;
-    margin: 15px;
-    border: black 1px solid;
-}
-
-.posts{
-  display: -webkit-box;
-  padding-bottom: 5px;
-  overflow-x: scroll;
-  width: 100%;
-}
-
-.posts .data-container{
-  width: 200px;
-  height: 100px;
-  display: block;
-}
-
 #nextButton {
     font-size: 2em;
-    background-color:  #FF9844;
+    background-color: #FF7400;
     border-color: #FF7400;
 }
 
 #nextButton:hover {
     font-size: 2em;
-    background-color: #FF7B0D;
+    background-color: #FF9900;
     border-color: #FF7400;
 }
 
 #previousButton {
     font-size: 2em;
-    background-color: #FF9844;
+    background-color: #FF7400;
     border-color: #FF7400;
 }
 
 #previousButton:hover {
     font-size: 2em;
-    background-color: #FF7B0D;
+    background-color: #FF9900;
     border-color: #FF7400;
 }
 
@@ -68,60 +38,144 @@
 
 #finishButton:hover {
     font-size: 2em;
-    background-color: #007C7C;
+    background-color: #00BF9F;
     border-color: #00BF9F;
 }
 
-.metadata-container div {
-    margin: 10px;
+#backButton {
+    font-size: 2em;
+    background-color: #FF7400;
+    border-color: #FF7400;
 }
 
-.photos .data-container{
-  display: block;
+#backButton:hover {
+    font-size: 2em;
+    background-color: #FF9900;
+    border-color: #FF7400;
 }
 
-.photos{
-  display: -webkit-box;
-  padding-bottom: 5px;
-  overflow-x: scroll;
+#logo{
+  color: white;
+}
+
+#navbar{
+  background-color: #009F9F;
+}
+
+#navbarinner li a{
+  color: white;
+}
+
+#creationCarousel {
+    border-radius: 7px;
+}
+
+#innerCarousel {
   width: 100%;
+  height: 100%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 1.5em;
 }
 
-.socMed-title {
-    margin-top: 10px;
-    margin-left: 10px;
+#headerCarousel h1{
+    background-color: #009F9F;
+    color: white;
+    padding-left: 1em;
+}
+
+#contributor {
+    text-align: center;
+    padding-top: 10em;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#contributorPanel {
+    border: 2px solid gray;
+    box-shadow: -2px 2px 5px grey;
+}
+
+#contributorHeading {
+    background-color: #009F9F;
+    font-size: medium;
+    color: white;
+}
+
+#contributorIcon a{
+    padding-left: .25em;
+    padding-right: .25em;
+    font-size: 5em;
+    color: #FF7400;
+}
+
+#contributorIcon:hover a{
+    color: #FF9800;
+}
+
+#contributorAdd a{
+    padding-left: .25em;
+    padding-right: .25em;
+    font-size: 4em;
+    color: #002222;
+}
+
+#contributorAdd:hover a{
+    color: #113333;
+}
+
+#contributorModal {
+    position: absolute;
+    top: 25%;
+}
+
+#modalHeader {
+    background: #113333;
+    color: white;
+}
+
+#finishHeader {
+    padding: 1.5em .475em;
+}
+
+#backButtonDiv {
+    position:relative;
+    left: 85%;
 }
 
 .carousel{
-  margin-top: 10%;
-  margin-left: 7%;
-  margin-right: 7%;
-  height: 65%;
+  width: 80%;
+  height: 100%;
   border: 2px solid gray;
   box-shadow: -2px 2px 5px grey;
+  margin: 0 auto;
 }
 
 .carousel-inner div.item {
   width: 100%;
-  height: 100%;
+  height: 60%;
 }
+
+.carousel-indicators li { visibility: hidden; }
 
 div.car-header{
   height: 15%;
   color: black;
   font-size: 2.75em;
-  padding: 10px 30px;
+  padding: .25em .75em;
   background-color: #FF7400;
+  border-radius: 5px;
+  color: white;
 }
 
-.car-container{
+/*.car-container{
   border: 1px solid grey;
   height: 62%;
   width: 86%;
   margin-top: 2%;
   margin-left: 7%;
   overflow: auto;
-}
+}*/
 
 .center {
     display: table-cell;
@@ -200,57 +254,6 @@ label {
     margin-bottom: .5rem;
 }
 
-.data-container{
-  border: 1px black solid;
-  width: 150px;
-  height: 100px;
-  margin: 10px;
-  display: inline-block;
-}
-
-.carousel-control.left {
-  position: absolute;
-  bottom: 10px;
-  left: 34%;
-  z-index: 15;
-  top: 83%;
-  padding-left: 0;
-  margin-left: -30%;
-  text-align: center;
-  list-style: none;
-  color: black;
-  background: transparent;
-}
-
-.carousel-indicators li {
-    border: 1px solid grey;
-}
-
-.carousel-indicators {
-    bottom: 3%;
-}
-
-.carousel-indicators .active {
-    width: 12px;
-    height: 12px;
-    margin: 0;
-    background-color: grey;
-}
-
-.carousel-control.right {
-  position: absolute;
-  bottom: 10px;
-  right: 3%;
-  z-index: 15;
-  top: 83%;
-  padding-left: 0;
-  margin-left: -30%;
-  text-align: center;
-  list-style: none;
-  color: black;
-  background: transparent;
-}
-
 button.add{
   border-bottom-color: white;
     border: white;
@@ -285,6 +288,10 @@ button.add:hover{
 .navbar-nav>li>.dropdown-menu {
     margin-top: -10px;
   }
+  
+.form-group {
+    font-size: 2em;
+}
 
 
 #logo:hover{
@@ -296,6 +303,6 @@ button.add:hover{
 }
 
 
-#navbar ul.dropdown-menu li a{
+ #navbar ul.dropdown-menu li a{
   color: black;
 }

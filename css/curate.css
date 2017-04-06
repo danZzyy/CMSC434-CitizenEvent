@@ -1,75 +1,56 @@
 
-.icons{
-  font-size: .75em;
+
+#templateDiv {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2em;
+    margin: 0 auto;
 }
 
-#logo{
-  color: white;
+#templateViewport {
+    width: 100%;
+    height: 100%;
+    scrolling: no;
+    border: none;
+    margin: 0 auto;
 }
 
-#navbar li a{
-  color: white;
+#template{
+  float:right;
 }
 
-.secondary {
-  width: 100%;
-  height: 100%;
+.noDisplay{
+  display: none;
 }
 
-.socMed-container {
-    height: 180px;
-    width: 515px;
-    margin: 15px;
-    border: black 1px solid;
+.panel.panel-success{
+  position: fixed;
+  right: 0;
+  float: right;
+  width: 15%;
+  height: 600px;
+
 }
 
-.posts{
-  display: -webkit-box;
-  padding-bottom: 5px;
-  overflow-x: scroll;
-  width: 100%;
+#template-one{
+  width: 80%;
+  margin: auto;
+  margin-left: 1%;
 }
 
-.posts .data-container{
-  width: 200px;
-  height: 100px;
-  display: block;
+#template-two{
+  width: 80%;
+  margin: auto;
+  margin-left: 1%;
 }
 
-#nextButton {
+.panel-title {
     font-size: 2em;
-    background-color:  #FF9844;
-    border-color: #FF7400;
 }
 
-#nextButton:hover {
-    font-size: 2em;
-    background-color: #FF7B0D;
-    border-color: #FF7400;
-}
-
-#previousButton {
-    font-size: 2em;
-    background-color: #FF9844;
-    border-color: #FF7400;
-}
-
-#previousButton:hover {
-    font-size: 2em;
-    background-color: #FF7B0D;
-    border-color: #FF7400;
-}
-
-#finishButton {
-    font-size: 2em;
-    background-color: #009F9F;
-    border-color: #009F9F;
-}
-
-#finishButton:hover {
-    font-size: 2em;
-    background-color: #007C7C;
-    border-color: #00BF9F;
+.panel-body{
+  height: 760px;
+    padding: 10px;
 }
 
 .metadata-container div {
@@ -118,8 +99,9 @@ div.car-header{
   border: 1px solid grey;
   height: 62%;
   width: 86%;
+  width: 100%;
+  margin: 0 auto;
   margin-top: 2%;
-  margin-left: 7%;
   overflow: auto;
 }
 
