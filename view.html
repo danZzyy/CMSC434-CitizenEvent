@@ -51,7 +51,7 @@
             <div id="navbarinner" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#about">My Archives</a></li>
+                <li><a href="#about">My Events</a></li>
                 <li><a><button class="add btn btn-default"><span class="glyphicon glyphicon-plus"/></button></a></li>
               </ul>
               <!--Search Bar-->
@@ -89,7 +89,7 @@
                         </a>
                     </div>
                     <!--faux sign in-->
-                    <p class="navbar-text navbar-right">Signed in as Kyle DeLancey</p>
+                    <p class="navbar-text navbar-right">Jim Bob</p>
                       
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
@@ -114,9 +114,6 @@
             </nav>
         </div> <!--Navbar Row-->
         
-        <div class="row">
-
-        </div>
         
         <!-- Carousel -->
         <div class="row">
@@ -129,22 +126,22 @@
               </ol>
               <div class="carousel-inner">
                 <div class="car-header">
-                      <div id="headerCarousel" class="title"> Create an event. </div>
-                    </div>
+                      <div id="headerCarousel" class="title"> Edit your event. </div>
+                </div>
                   <div class="item active">
                       <div id="innerCarousel" class="container">
                           <div class="row">
                               <div class="col-6 col-lg-6">
                                 <div class="form-group">
                                   <label>Event Name:</label>
-                                  <input type="text" class="form-control" placeholder="Name of the event">
+                                  <input type="text" class="form-control" value="In Search of a Good Boy.">
                                 </div>
                               </div>
                               <div class="col-6 col-lg-4">
                                 <div class="form-group">
                                   <label>Type:</label>
                                   <select class="form-control">
-                                    <option>Social</option>
+                                    <option selected>Social</option>
                                     <option>Music</option>
                                     <option>Politics</option>
                                     <option>Private</option>
@@ -157,13 +154,13 @@
                               <div class="col-6 col-md-4">
                                 <div class="form-group">
                                   <label>Date:</label>
-                                  <input type="date" class="form-control">
+                                  <input type="date" class="form-control" value ="2014-02-28">
                                 </div>
                               </div>
                               <div class="col-6 col-md-6">
                                 <div class="form-group">
                                   <label>Location:</label>
-                                  <input type="text" class="form-control" placeholder="City, Street, Planet, etc">
+                                  <input type="text" class="form-control" value="College Park, MD">
                                 </div>
                               </div>
                           </div>
@@ -181,20 +178,20 @@
                               <div class="col-6 col-lg-6">
                                 <div class="form-group">
                                   <label for="comment">Description:</label>
-                                  <textarea class="form-control" rows="5" placeholder="Add a description of the event here."></textarea>
+                                  <textarea class="form-control" rows="5">Lookin’ for a quality doggo or pupper.</textarea>
                                 </div>
                               </div>
                               <div class="col-6 col-lg-4">
                                 <div class="form-group">
                                   <label>Who can view:</label>
                                   <select class="form-control">
-                                    <option>Private (only you)</option>
+                                    <option selected>Private (only you)</option>
                                     <option>Public (everyone)</option>
                                   </select>
                                 </div>
                                 <div class="form-group">
                                   <label>Organization name:</label>
-                                  <input type="text" class="form-control" placeholder="Your organization">
+                                  <input type="text" class="form-control" value="None">
                                 </div>
                               </div>
                           </div>
@@ -212,7 +209,7 @@
                   <div class="item">
                     <div id="innerCarousel" class=container">
                       <div class="row">
-                        <h1 id="finishHeader">Thanks! That's it for now.</h1>
+                        <h1 id="finishHeader">Cool! Your event had been edited!</h1>
                         <div id="backButtonDiv">
                           <p><a id="backButton" class="btn btn-sm btn-primary" href="#" role="button">Go Back</a></p>
                         </div>
@@ -225,6 +222,180 @@
         </div>  <!--Carousel Row-->
     
     </div>
+     
+     
+    <div class=row>
+        <div id="carousel" class="carousel slide" data-ride="carousel" data-wrap="false" data-interval="false">
+          <!-- Menu -->
+          <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+              <li data-target="#carousel" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Items -->
+          <div class="carousel-inner">
+              <div class="item active">
+                  <div class="car-header">
+                    <div class="title"> Photos </div>
+                  </div>
+                  <div class="car-container">
+                    <div class="center">
+                        <div class="data-container" ng-repeat="i in [1, 2, 3, 4, 5, 6, 7, 8]">
+                          <div class="check-comp">
+                            <label class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input">
+                              <span class="custom-control-indicator"></span>
+                            </label>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <a href="#carousel" id="nextButton" class="right carousel-control" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span> Videos
+                  </a>
+              </div>
+              <div class="item">
+                <div class="car-header">
+                  <div class="title"> Videos </div>
+                </div>
+                <div class="car-container">
+                  <div class="center">
+                    <div class="data-container" ng-repeat="i in [1, 2, 3, 4]">
+                      <div class="check-comp">
+                        <label class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input">
+                          <span class="custom-control-indicator"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a id="previousButton" href="#carousel" class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span> Photos
+                </a>
+                <a role="button" id="nextButton" href="#carousel" class="right carousel-control" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span> Social Media
+                </a>
+              </div>
+              <div class="item">
+                <div class="car-header">
+                  <div class="title"> Social Media </div>
+                </div>
+                <div class="car-container">
+                  <div class="center">
+                    <div class="socMed-container">
+                      <div class="socMed-title">
+                        <label>
+                          <span> Facebook </span>
+                          <input type="checkbox">
+                        </label>
+                      </div>
+                      <div class="posts">
+                        <div class="data-container" ng-repeat="i in [1, 2, 3, 4]">
+                          <div class="check-comp">
+                            <label class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input">
+                              <span class="custom-control-indicator"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="socMed-container">
+                      <div class="socMed-title">
+                        <label>
+                          <span> Twitter </span>
+                          <input type="checkbox">
+                        </label>
+                      </div>
+                      <div class="posts">
+                        <div class="data-container" ng-repeat="i in [1, 2, 3, 4]">
+                          <div class="check-comp">
+                            <label class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input">
+                              <span class="custom-control-indicator"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="socMed-container">
+                      <div class="socMed-title">
+                        <label>
+                          <span> Instagram </span>
+                          <input type="checkbox">
+                        </label>
+                      </div>
+                      <div class="photos">
+                        <div class="data-container" ng-repeat="i in [1, 2, 3, 4]">
+                          <div class="check-comp">
+                            <label class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input">
+                              <span class="custom-control-indicator"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a id="previousButton" href="#carousel" class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span> Videos
+                </a>
+                <a role="button" id="nextButton" href="#carousel" class="right carousel-control" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span> Summary Information
+                </a>
+              </div>
+              <div class="item">
+                <div class="car-header">
+                  <div class="title"> Summary Information </div>
+                </div>
+                <div class="car-container">
+                  <div class="metadata-container">
+                    <div id="event-name">
+                      <label>
+                        <input type="checkbox">
+                        <span> Event Name: Angular thing here </span>
+                      </label>
+                    </div>
+                    <div id="org-name">
+                      <label>
+                        <input type="checkbox">
+                        <span> Organization: Angular thing here </span>
+                      </label>
+                    </div>
+                    <div id="date-name">
+                      <label>
+                        <input type="checkbox">
+                        <span> Date: Angular thing here </span>
+                      </label>
+                    </div>
+                    <div id="loc-name">
+                      <label>
+                        <input type="checkbox">
+                        <span> Location: Angular thing here </span>
+                      </label>
+                    </div>
+                    <div id="description">
+                      <label>
+                        <input type="checkbox">
+                        <span> Description: Angular thing here </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <a id="previousButton" href="#carousel" class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span> Social Media
+                </a>
+                <a role="button" id="finishButton" href="#carousel" class="right carousel-control" data-slide="next">
+                    Finish
+                </a>
+              </div>
+          </div>
+      </div>
+    </div>
     
     <div id="contributor">
       
@@ -233,6 +404,9 @@
           <h2 class="panel-title">Contributors</h2>
         </div>
         <div id="contributorBody" class="panel-body">
+          <div id="contributorIcon" class="col pull-left">
+            <a href="#user"><span class="icons"><span class="glyphicon glyphicon-user"></span></a>
+          </div>
           <div id="contributorIcon" class="col pull-left">
             <a href="#user"><span class="icons"><span class="glyphicon glyphicon-user"></span></a>
           </div>
