@@ -1,0 +1,178 @@
+header {
+  font-size: 12pt;
+  height: 60px;
+  background-color: #009F9F;
+  color: white;
+}
+.gliphicon {
+  color: white;
+}
+.glyphicon-search {
+  margin-left: 100px;
+  margin-right: 0;
+}
+.glyphicon-user {
+  padding-right: 10px;
+}
+.glyphicon-tint {
+  font-size: 24pt;
+}
+#pools {
+  font-size: 30pt;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+#search {
+  padding: 10px;
+  height: 45px;
+  width: 150px;
+  background-color: gray;
+}
+#myacct {
+  margin-left: 20%;
+}
+
+.login-form {
+  margin: 2em;
+  display: block;
+}
+
+.login-buttons {
+  margin: 1.5em;
+}
+
+#login{
+  background-color: #009F9F;
+}
+
+.input-field {
+  margin: 1em;
+  font-size: 1.5em;
+  width: 95%;
+}
+
+.register-button {
+  margin-left: 3.53em;
+}
+
+.project-select {
+  margin: 0.70em;
+  width: 92%;
+}
+
+.header-info {
+  text-align: center;
+  border-style: solid;
+  background-color: #FF7400;
+  border-color: #FF7400;
+  color: white;
+}
+
+.login-input{
+  margin-right: 4em;
+}
+
+#myacct {
+  margin-left: 10%;
+}
+
+.social-media-icon{
+  height: 32px;
+}
+
+.dropdown-text {
+  color: black;
+  padding: 0.5em;
+}
+
+.media-upload {
+  height: 96px;
+  width: 96px;
+}
+
+.img-section {
+  margin: 0.25em;
+  overflow: hidden;
+}
+
+.media-title{
+  color: #009F9F;
+  margin-left: 1em;
+  margin-top: 0.25em;
+  margin-bottom: 0em;
+}
+
+.hr{
+  border-color: #FF7400;
+}
+.checkbox{
+  position: absolute;
+  bottom: 82px;
+  right: 0px;
+}
+
+.img-container {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  float: left;
+  margin: 0.5em;
+}
+
+.upload-btn{
+  width:100%;
+  margin-top: 0.25em;
+}
+
+.success-anim{
+  -webkit-animation: success 6s forwards;
+ display: inline-block;
+ padding: 10px;
+ transition: all 0.5s;
+ border-radius: 5px;
+ position: absolute;
+ top: 6%;
+ left: 20%;
+ background: green;
+ color: white;
+ margin: 2em;
+}
+
+@-webkit-keyframes success {
+  0% {
+    transform: translateX(-5px);
+  }
+  5% {
+    transform: translateX(5px);
+  }
+  10% {
+    transform: translateX(-5px);
+  }
+  15% {
+    transform: translateX(5px);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+
+.dropdown:visited{
+  color: black;
+}
+
+.dropdown{
+  color: black;
+}
