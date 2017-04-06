@@ -1,3 +1,38 @@
+header {
+  font-size: 12pt;
+  height: 60px;
+  background-color: #009F9F;
+  color: white;
+}
+.gliphicon {
+  color: white;
+}
+.glyphicon-search {
+  margin-left: 100px;
+  margin-right: 0;
+}
+.glyphicon-user {
+  padding-right: 10px;
+}
+.glyphicon-tint {
+  font-size: 24pt;
+}
+#pools {
+  font-size: 30pt;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+#search {
+  padding: 10px;
+  height: 45px;
+  width: 150px;
+  background-color: gray;
+}
+#myacct {
+  margin-left: 20%;
+}
+
 .login-form {
   margin: 2em;
   display: block;
