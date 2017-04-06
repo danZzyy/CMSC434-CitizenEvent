@@ -65,7 +65,7 @@ td {
   font-size: 20pt;
   margin-bottom: 10px;
 }
-button.edit, button.cur{
+#edit, #cur{
   float: right;
   background-color:  #009F9F;
   color: white;

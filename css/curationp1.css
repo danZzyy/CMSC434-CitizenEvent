@@ -11,6 +11,11 @@
   color: white;
 }
 
+.secondary {
+  width: 100%;
+  height: 100%;
+}
+
 .socMed-container {
     height: 180px;
     width: 515px;
