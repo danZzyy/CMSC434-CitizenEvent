@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -8,60 +9,116 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <title>My Account</title>
-  </head>
-  <body>
-    <header>
-      <span id="pools">P<span class="glyphicon glyphicon-tint"></span><span class="glyphicon glyphicon-tint"></span>LS</span>
-      <span id="search">Search<span class="glyphicon glyphicon-search" ></span></span>
-      <span id="myacct"><span class="glyphicon glyphicon-user" ></span>Dan Zadorozhnyy</span>
-        <div class=""></div>
-        <div class=""></div>
-      </span>
-    </header>
-    <div id="title">My Account</div>
-    <div id="personal-info">
-      <h4>Personal Info</h4>
-      Contact Info<br>
-      Security<br>
-      Statistics<br>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #009F9F;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a id="logo" class="navbar-brand" href="./landing.html#about"> P<span class="icons"><span class="glyphicon glyphicon-tint"></span><span class="glyphicon glyphicon-tint"></span></span>LS</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="./myarchive.html">My Archives</a></li>
+                    <li><a href="./create.html"><button class="add btn btn-default"><span class="glyphicon glyphicon-plus"/></button></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Isabella Seeman <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="./account.html">My Account</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div id="title">
+        <h1>My Account</h1>
     </div>
-    <div id="my-info" class="floatbox">
-      <h4><span id="userhead" class="glyphicon glyphicon-user" ></span>
-      Dan Zadorozhnyy</h4>
-      Date Joined: MM/DD/YYYY<br>
-      Equipment:<br>
-      <ul>
-        <li>Camera</li>
-        <li>Video Camera</li>
-        <li>Smartphone</li>
-      </ul>
+    <div id="options">
+      <span class="opt"> <a href="#"> <span class="glyphicon glyphicon-phone-alt"></span> Contact Info</a></span>
+      <span class="opt"> <a href="#"> <span class="glyphicon glyphicon-lock"></span> Security</a></span>
+      <span class="opt"> <a href="#"> <span class="glyphicon glyphicon-stats"></span> Statistics</a></span>
     </div>
-    <div id="worked-with" class="floatbox">
-      <h4>Worked With</h4>
-      <ul>
-        <li>Nathan</li>
-        <li>Ella</li>
-        <li>Kyle</li>
-        <li>Golub</li>
-      </ul>
+
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Isabella Seeman</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-3 col-lg-3 " align="center"> <span id="user-icon" class="glyphicon glyphicon-user"></span> </div>
+
+
+                <div class=" col-md-9 col-lg-9 ">
+                    <table class="table table-user-information">
+                        <tbody>
+                            <tr>
+                                <td>Member Since:</td>
+                                <td>3/15/2017</td>
+                            </tr>
+                            <tr>
+                                <td>Role:</td>
+                                <td>Curator</td>
+                            </tr>
+                            <tr>
+                                <td>Worked with: </td>
+                                <td>
+                                    <ul>
+                                        <li>Nathan</li>
+                                        <li>Kyle</li>
+                                        <li>Dan</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Equipment:</td>
+                                <td>
+                                    <ul>
+                                        <li>Camera</li>
+                                        <li>Smartphone</li>
+                                        <li>Microphone</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td><a href="mailto:info@support.com">hcievent@umd.edu</a></td>
+                            </tr>
+                            <td><a href="#">Reset Password</a></td>
+                            <td><a href="#">Forgot Password?</a></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+            <span class="pull-right">
+                           <a href="#" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
+                           <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                       </span>
+        </div>
+
     </div>
-    <div id="stats" class="floatbox">
-      <h4>Statistics</h4>
-      <table>
-        <tr>
-          <td>Photos Uploaded</td>
-          <td>  50</td>
-        </tr>
-        <tr>
-          <td>Videos Uploaded</td>
-          <td>  6</td>
-        </tr>
-        <tr>
-          <td>Events</td>
-          <td>  3</td>
-        </tr>
-      </table>
-    </div>
-  </body>
+
+</body>
+
 </html>

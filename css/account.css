@@ -1,65 +1,20 @@
-header {
-  font-size: 12pt;
-  height: 60px;
-  background-color: darkblue;
-  color: white;
-}
-.gliphicon {
-  color: white;
-}
-.glyphicon-search {
-  margin-left: 100px;
-  margin-right: 0;
-}
-.glyphicon-user {
-  padding-right: 10px;
-}
-.glyphicon-tint {
-  font-size: 24pt;
-}
-#pools {
-  font-size: 30pt;
-  padding-left: 50px;
-  padding-right: 50px;
+#title {
+  margin-top: 70px;
   text-align: center;
 }
-#search {
-  position: relative;
-  bottom: 6px;
+.panel {
   margin-top: 10px;
-  margin-bottom: 20px;
-  padding: 5px;
-  width: 150px;
-  background-color: gray;
+  margin-right: 25%;
+  margin-left: 25%;
 }
-#myacct {
-  position: fixed;
-  right: 0;
-  padding: 20px;
+#user-icon {
+  font-size: 90pt;
 }
-#title {
-  text-align:  center;
-  font-size: 22pt;
+#options {
+  text-align: center;
+  font-size: 14pt;
 }
-#personal-info {
-  height: 800px;
-  float: left;
-  margin-left: 20px;
-  margin-right: 50px;
-}
-#my-info {
-  width: 300px;
-}
-#userhead {
-  float: left;
-  position: relative;
-  font-size: 40px;
-  color: black;
-  padding-left: 10px;
-}
-.floatbox {
-  width: 300px;
-  float: left;
-  position: relative;
-  border: 1px solid black;
+.opt {
+  margin-left: 40px;
+  margin-right: 40px;
 }
