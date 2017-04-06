@@ -1,0 +1,13 @@
+header {
+  font-size: 12pt;
+  height: 60px;
+  background-color: #009F9F;
+  color: white;
+}
+.gliphicon {
+  color: white;
+}
+.glyphicon-search {
+  margin-left: 100px;
+  margin-right: 0;
+}

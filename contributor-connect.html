@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/account.css"/>
+  <link rel="stylesheet" href="css/contrib_account.css"/>
   <link rel="stylesheet" href="css/contributor.css" />
   <title>Connect Social Media</title>
 </head>
@@ -20,14 +20,20 @@
   </header>
 
   <div id="main_content">
-    <button class="btn btn-default btn-lg btn-block project-select">
-      Connect to Twitter <img class="social-media-icon" src="img/twitter-icon.png" />
+    <button id="twitter" class="btn btn-default btn-lg btn-block project-select">
+      <span id="twitter-text"> Connect to Twitter </span> <img class="social-media-icon" src="img/twitter-icon.png" />
     </button>
-    <button href="" class="btn btn-default btn-lg btn-block project-select">
-      Connect To Facebook <img class="social-media-icon" src="img/fb-icon.png" />
+    <button  id="facebook"  class="btn btn-default btn-lg btn-block project-select">
+      <span id="fb-text"> Connect To Facebook </span> <img class="social-media-icon" src="img/fb-icon.png" />
     </button>
-    <button href="" class="btn btn-default btn-lg btn-block project-select">
-      Connect To Tumblr <img class="social-media-icon" src="img/tumblr-icon.png" />
+    <button id="tumblr" href="" class="btn btn-default btn-lg btn-block project-select">
+      <span id="tumblr-text"> Connect To Tumblr </span> <img class="social-media-icon" src="img/tumblr-icon.png" />
+    </button>
+    <button id="insta" href="" class="btn btn-default btn-lg btn-block project-select">
+      <span id="insta-text"> Connect To Instagram </span> <img class="social-media-icon" src="img/insta-icon.png" />
+    </button>
+    <button id="pushToproject" disabled class="btn btn-default btn-lg btn-block project-select">
+      Push Posts to Archive
     </button>
   </div>
   <script src="js/contributor_functions.js"></script>
