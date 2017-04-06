@@ -10,21 +10,26 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/account.css"/>
   <link rel="stylesheet" href="css/contributor.css" />
-  <title>Contributor Login</title>
+  <title>Connect Social Media</title>
 </head>
 <body>
   <header>
     <span id="pools">P<span class="glyphicon glyphicon-tint"></span><span class="glyphicon glyphicon-tint"></span>LS</span>
+    </span>
+    <span id="myacct" onclick="in_progress('Account')"><span class="glyphicon glyphicon-user" ></span></span>
   </header>
-  <div class="input-group login-input">
-    <div class="login-form">
-      <input type="text" class="form-control input-field" placeholder="email" aria-describedby="basic-addon1" />
-      <input type="password" class="form-control input-field" placeholder="password" />
-    </div>
-    <div class="login-buttons">
-      <a href="contributor_home.html" class="btn btn-primary btn-lg input-field">Login</a>
-    </div>
 
+  <div id="main_content">
+    <button class="btn btn-default btn-lg btn-block project-select">
+      Connect to Twitter
+    </button>
+    <button href="" class="btn btn-default btn-lg btn-block project-select">
+      Connect To Facebook
+    </button>
+    <button href="" class="btn btn-default btn-lg btn-block project-select">
+      Connect To Tumblr
+    </button>
   </div>
+  <script src="js/contributor_functions.js"></script>
 </body>
 </html>
