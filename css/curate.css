@@ -15,8 +15,42 @@
     margin: 0 auto;
 }
 
+#template{
+  float:right;
+}
+
+.noDisplay{
+  display: none;
+}
+
+.panel.panel-success{
+  position: fixed;
+  right: 0;
+  float: right;
+  width: 15%;
+  height: 600px;
+
+}
+
+#template-one{
+  width: 80%;
+  margin: auto;
+  margin-left: 1%;
+}
+
+#template-two{
+  width: 80%;
+  margin: auto;
+  margin-left: 1%;
+}
+
 .panel-title {
     font-size: 2em;
+}
+
+.panel-body{
+  height: 760px;
+    padding: 10px;
 }
 
 .metadata-container div {
@@ -65,8 +99,9 @@ div.car-header{
   border: 1px solid grey;
   height: 62%;
   width: 86%;
+  width: 100%;
+  margin: 0 auto;
   margin-top: 2%;
-  margin-left: 7%;
   overflow: auto;
 }
 
