@@ -1,8 +1,87 @@
+#navbar li a{
+  color: white;
+}
+.navbar-nav>li>.dropdown-menu {
+    margin-top: -10px;
+  }
+
+
+#logo:hover{
+  color:whitesmoke;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  background-color: #009F9F;
+}
+
+
+ #navbar ul.dropdown-menu li a{
+  color: black;
+}
+
+.icons{
+  font-size: .75em;
+}
+
+#logo{
+  color: white;
+}
+
+button.add{
+  border-bottom-color: white;
+    border: white;
+    border-style: solid;
+    background-color: #009F9F;
+    color: white;
+    border-width: 1px;
+    padding: 5px 8px;
+    margin-bottom: -5px;
+    margin-top: -4px;
+    margin-left: -20px;
+    padding-bottom: 1px;
+}
+
+.btn-default:active:focus, .btn-default:active:hover{
+  border-bottom-color: white;
+  border: white;
+  border-style: solid;
+  background-color: #007C7C;
+  color: white;
+  border-width: 1px;
+}
+
+button.add:hover{
+    border-bottom-color: white;
+    border: white;
+    border-style: solid;
+    background-color: #007C7C;
+    color: white;
+    border-width: 1px;
+}
+
+button.add:active{
+  border-bottom-color: white;
+    border: white;
+    border-style: solid;
+    background-color: #007C7C;
+    color: white;
+    border-width: 1px;
+}
+
+button.add:focus{
+  border-bottom-color: white;
+    border: white;
+    border-style: solid;
+    background-color: #007C7C;
+    color: white;
+    border-width: 1px;
+}
+
 .navbar-default {
   background-color: #009F9F;
   background-color: #009F9F;
 }
-.navbar-default .navbar-brand {
+/*.navbar-default .navbar-brand {
   color: #ffffff;
 }
 .navbar-default .navbar-brand:hover,
@@ -66,4 +145,4 @@
     color: #ffffff;
     background-color: #009F9F;
   }
-}
+}*/

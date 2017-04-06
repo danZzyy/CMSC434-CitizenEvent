@@ -1,15 +1,4 @@
 
-.icons{
-  font-size: .75em;
-}
-
-#logo{
-  color: white;
-}
-
-#navbar li a{
-  color: white;
-}
 
 .secondary {
   width: 100%;
@@ -17,29 +6,35 @@
 }
 
 .socMed-container {
-    height: 180px;
-    width: 515px;
+    height: 260px;
+    width: 100%;
     margin: 15px;
-    border: black 1px solid;
 }
 
 .posts{
   display: -webkit-box;
   padding-bottom: 5px;
   overflow-x: scroll;
-  width: 100%;
+  border: 1px black solid;
+  width: 1084px;
 }
 
 .posts .data-container{
-  width: 200px;
-  height: 100px;
+  width: 250px;
+  height: 190px;
   display: block;
+}
+
+.post{
+  margin-top: 15%;
 }
 
 #nextButton {
     font-size: 2em;
     background-color:  #FF9844;
     border-color: #FF7400;
+    color: #fff;
+    border-radius: 3px;
 }
 
 #nextButton:hover {
@@ -52,6 +47,8 @@
     font-size: 2em;
     background-color: #FF9844;
     border-color: #FF7400;
+    color: #fff;
+    border-radius: 3px;
 }
 
 #previousButton:hover {
@@ -64,12 +61,20 @@
     font-size: 2em;
     background-color: #009F9F;
     border-color: #009F9F;
+    color: #fff;
+    border-radius: 3px;
 }
 
 #finishButton:hover {
     font-size: 2em;
     background-color: #007C7C;
     border-color: #00BF9F;
+}
+
+#finishButton div {
+    position: absolute;
+    top: 24px;
+    left: 62px;
 }
 
 .metadata-container div {
@@ -84,7 +89,7 @@
   display: -webkit-box;
   padding-bottom: 5px;
   overflow-x: scroll;
-  width: 100%;
+  width: 1060px;
 }
 
 .socMed-title {
@@ -93,12 +98,13 @@
 }
 
 .carousel{
-  margin-top: 10%;
+  margin-top: 6%;
   margin-left: 7%;
   margin-right: 7%;
-  height: 65%;
+  height: 75%;
   border: 2px solid gray;
   box-shadow: -2px 2px 5px grey;
+  border-radius: 3px;
 }
 
 .carousel-inner div.item {
@@ -127,6 +133,8 @@ div.car-header{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 label{
@@ -149,7 +157,7 @@ label{
 }
 
 .custom-checkbox .custom-control-indicator {
-    border-radius: .25rem 0rem .25rem .25rem;
+    border-radius: .25em 0 .25em .25em;
 }
 
 .checkmark {
@@ -206,6 +214,7 @@ label {
   height: 100px;
   margin: 10px;
   display: inline-block;
+  border-radius: 3px;
 }
 
 .carousel-control.left {
@@ -230,6 +239,10 @@ label {
     bottom: 3%;
 }
 
+button.add{
+  padding-bottom: 5px;
+}
+
 .carousel-indicators .active {
     width: 12px;
     height: 12px;
@@ -251,28 +264,6 @@ label {
   background: transparent;
 }
 
-button.add{
-  border-bottom-color: white;
-    border: white;
-    border-style: solid;
-    background-color: #009F9F;
-    color: white;
-    border-width: 1px;
-    padding: 5px 8px;
-    margin-bottom: -5px;
-    margin-top: -4px;
-    margin-left: -20px;
-}
-
-button.add:hover{
-  border-bottom-color: white;
-    border: white;
-    border-style: solid;
-    background-color: #007C7C;
-    color: white;
-    border-width: 1px;
-}
-
 .carousel-item {
   width: 75%;
   height: 50%;
@@ -281,6 +272,7 @@ button.add:hover{
   border-color: black;
   border-width: 2px;
 }
+
 
 .navbar-nav>li>.dropdown-menu {
     margin-top: -10px;
